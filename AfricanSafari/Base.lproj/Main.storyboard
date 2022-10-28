@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aFB-g9-3pb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video View Controller-->
+        <scene sceneID="dZr-Y4-IBS">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" id="dY6-kY-BiR" customClass="VideoViewController" customModule="AfricanSafari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qv2-Pj-Jf3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="po5-7D-Bqs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="dY6-kY-BiR" id="4tk-Kr-CgI"/>
+                                    <outlet property="delegate" destination="dY6-kY-BiR" id="GnY-7S-6CR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gZC-ty-Ctf"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="po5-7D-Bqs" firstAttribute="leading" secondItem="gZC-ty-Ctf" secondAttribute="leading" id="8Bx-U8-aL7"/>
+                            <constraint firstItem="po5-7D-Bqs" firstAttribute="top" secondItem="gZC-ty-Ctf" secondAttribute="top" id="URG-5t-2vB"/>
+                            <constraint firstItem="gZC-ty-Ctf" firstAttribute="trailing" secondItem="po5-7D-Bqs" secondAttribute="trailing" id="Uu0-fa-NrX"/>
+                            <constraint firstItem="gZC-ty-Ctf" firstAttribute="bottom" secondItem="po5-7D-Bqs" secondAttribute="bottom" id="fyB-3s-ARb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZWO-k8-9uk"/>
+                    <connections>
+                        <outlet property="videoTableView" destination="po5-7D-Bqs" id="893-16-Vxo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="111-5H-4Bd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342.0289855072465" y="93.75"/>
+        </scene>
+        <!--Browse View Controller-->
+        <scene sceneID="nE2-yC-2rF">
+            <objects>
+                <viewController storyboardIdentifier="BrowseViewController" id="XUt-cp-OzV" customClass="BrowseViewController" customModule="AfricanSafari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yGy-fU-2Em">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="c2W-Gb-zNN"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C6U-0s-G1U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DW3-NL-47u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342.0289855072465" y="-512.27678571428567"/>
+        </scene>
+        <!--Browse Details View Controller-->
+        <scene sceneID="3e5-dz-yRR">
+            <objects>
+                <viewController storyboardIdentifier="BrowseDetailsViewController" id="Twq-EB-cyK" customClass="BrowseDetailsViewController" customModule="AfricanSafari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ULE-5v-IXa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YF1-1G-BH7"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YzY-ea-KoI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2078" y="-489"/>
+        </scene>
+        <!--Animal Tab Bar Controller-->
+        <scene sceneID="l6q-Vr-CV1">
+            <objects>
+                <tabBarController storyboardIdentifier="AnimalTabBarController" id="aFB-g9-3pb" customClass="AnimalTabBarController" customModule="AfricanSafari" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="31o-av-v1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.68599998949999996" blue="0.0080000003800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iXN-X5-WQz" kind="relationship" relationship="viewControllers" id="a9b-uK-ugg"/>
+                        <segue destination="G1F-B9-nXy" kind="relationship" relationship="viewControllers" id="479-ay-GbH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RgN-Sm-Yy3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1368" y="-209"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="Yay-h9-wiG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G1F-B9-nXy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Video" id="3Ck-b9-AMw">
+                        <imageReference key="image" image="play.rectangle" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" red="1" green="0.68627450980392157" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <imageReference key="selectedImage" image="play.rectangle" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g96-cz-Y21">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.68627450980000004" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dY6-kY-BiR" kind="relationship" relationship="rootViewController" id="0UI-Sc-4jJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="io6-Wf-xQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-478.26086956521743" y="93.75"/>
+        </scene>
+        <!--Browse-->
+        <scene sceneID="322-LL-8TN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iXN-X5-WQz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Browse" id="Yka-hG-Ntf">
+                        <imageReference key="image" image="square.grid.2x2" catalog="system" symbolScale="large"/>
+                        <imageReference key="selectedImage" image="square.grid.2x2" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wwm-8N-q6g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="0.68627450980000004" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="1" green="0.68627450980000004" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XUt-cp-OzV" kind="relationship" relationship="rootViewController" id="zcu-lG-AHw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kew-fL-ZFl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431.8840579710145" y="-512.27678571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.rectangle" catalog="system" width="128" height="93"/>
+        <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

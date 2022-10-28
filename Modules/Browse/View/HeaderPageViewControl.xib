@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderPageViewControl" customModule="AfricanSafari" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderPageViewControl" id="iN0-l3-epB" customClass="HeaderPageViewControl" customModule="AfricanSafari" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpp-Mq-pLP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="sGw-id-doG"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="sob-Zt-USg"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="2K2-Jy-c0F"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DYJ-iB-2D6">
+                    <rect key="frame" x="149" y="274" width="116" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="iJ1-dK-ULC"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fpp-Mq-pLP" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="AIy-KJ-170"/>
+                <constraint firstItem="DYJ-iB-2D6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pp9-3D-nFB"/>
+                <constraint firstItem="fpp-Mq-pLP" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="R64-aa-Ky8"/>
+                <constraint firstItem="fpp-Mq-pLP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="abn-m8-zWD"/>
+                <constraint firstItem="fpp-Mq-pLP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="djD-y8-Bru"/>
+                <constraint firstItem="fpp-Mq-pLP" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="pZD-43-MQ0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DYJ-iB-2D6" secondAttribute="bottom" id="tkD-cU-jCx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerScrollView" destination="fpp-Mq-pLP" id="Inu-bt-nit"/>
+                <outlet property="pageControl" destination="DYJ-iB-2D6" id="X5P-t6-x43"/>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="-185.91549295774649"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
